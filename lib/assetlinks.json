@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.mandi.mandiweb",
+    "sha256_cert_fingerprints":
+    ["B7:01:DD:C6:4E:FF:40:6A:C8:13:E7:9D:36:D3:99:1D:EB:1C:AA:62:A3:4C:1B:47:DF:74:F9:A4:4B:DA:DE:91","72:91:2D:E7:80:C6:A6:46:88:6F:FF:C3:D0:63:FB:EE:2A:07:66:28:9F:1E:EA:6B:AD:FB:A3:AD:D9:C6:86:00"]
+  }
+}]

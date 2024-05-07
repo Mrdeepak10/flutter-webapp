@@ -1,0 +1,179 @@
+.razorpay-container .razorpay-payment-container img {
+    /* Adjust the width and height as needed */
+    width: 300px;
+    height: 300px;
+}
+
+body {
+  background-color: #E5E5E5;
+  padding: 16px;
+}
+
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#loader-text {
+  display: block;
+  position: relative;
+  width: 100%;
+  left: 0%;
+  top: calc(50% + 16px);
+}
+
+#loader-text {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+@keyframes changeText {
+  0% {
+    content: 'Connecting to Mymandi Server';
+  }
+
+  18% {
+    content: 'Establishing connection';
+  }
+
+  36% {
+    content: 'Finding retails details';
+  }
+
+  54% {
+    content: 'Connecting to retails outlook';
+  }
+
+  72% {
+    content: 'We are almost ready...';
+  }
+
+  90% {
+    content: 'Ready to Shop';
+  }
+}
+
+#loader-text>p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 400;
+  font-size: 26;
+  color: #414042;
+}
+
+#loader-text>p:after {
+  animation: changeText 30s infinite;
+  content: 'Connecting...'
+}
+
+#loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+
+  border: 3px solid #3498db;
+}
+
+#loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 3px solid #e74c3c;
+}
+
+#loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 3px solid #f9c922;
+}
+
+#loader {
+  border: 3px solid transparent;
+  border-top-color: #3498db;
+}
+
+#loader:before {
+  border: 3px solid transparent;
+  border-top-color: #e74c3c;
+}
+
+#loader:after {
+  border: 3px solid transparent;
+  border-top-color: #f9c922;
+}
+
+#loader {
+  border-radius: 50%;
+}
+
+#loader:before {
+  border-radius: 50%;
+}
+
+#loader:after {
+  border-radius: 50%;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    transform: rotate(0deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(360deg);
+    /* IE 9 */
+    transform: rotate(360deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    transform: rotate(0deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(360deg);
+    /* IE 9 */
+    transform: rotate(360deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+}
+
+#loader {
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+#loader:before {
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
